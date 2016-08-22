@@ -179,7 +179,7 @@ cd $target/gdb
 
 if [ ! -f configured-gdb ]
 then
-	CFLAGS=$cflags LDFLAGS=$ldflags ../../gdb-$GDB_VER/configure \
+	CFLAGS="$cflags -std=gnu89" LDFLAGS=$ldflags ../../gdb-$GDB_VER/configure \
 	--disable-nls --prefix=$prefix --target=$target --disable-werror \
 	--disable-dependency-tracking \
 	$CROSS_PARAMS \

@@ -4617,3 +4617,45 @@ diff -Nbaur binutils-2.22/opcodes/mips-opc.c binutils-2.22-psp/opcodes/mips-opc.
  {"bposge32", "p",	0x041c0000, 0xffff0000, CBD,			0,		D32	},
  {"bposge64", "p",	0x041d0000, 0xffff0000, CBD,			0,		D64	},
  {"cmp.eq.ph", "s,t",	0x7c000211, 0xfc00ffff, RD_s|RD_t,		0,		D32	},
+diff -ur binutils-2.22.orig/bfd/doc/bfd.texinfo binutils-2.22/bfd/doc/bfd.texinfo
+--- binutils-2.22.orig/bfd/doc/bfd.texinfo	2016-08-22 00:30:18.645107412 +0100
++++ binutils-2.22/bfd/doc/bfd.texinfo	2016-08-22 00:30:40.381224940 +0100
+@@ -322,7 +322,7 @@
+ @printindex cp
+ 
+ @tex
+-% I think something like @colophon should be in texinfo.  In the
++% I think something like @@colophon should be in texinfo.  In the
+ % meantime:
+ \long\def\colophon{\hbox to0pt{}\vfill
+ \centerline{The body of this manual is set in}
+@@ -333,7 +333,7 @@
+ \centerline{{\sl\fontname\tensl\/}}
+ \centerline{are used for emphasis.}\vfill}
+ \page\colophon
+-% Blame: doc@cygnus.com, 28mar91.
++% Blame: doc@@cygnus.com, 28mar91.
+ @end tex
+ 
+ @bye
+diff -ur binutils-2.22.orig/ld/ld.texinfo binutils-2.22/ld/ld.texinfo
+--- binutils-2.22.orig/ld/ld.texinfo	2016-08-22 00:30:19.149110137 +0100
++++ binutils-2.22/ld/ld.texinfo	2016-08-22 00:30:56.665312986 +0100
+@@ -7778,7 +7778,7 @@
+ @printindex cp
+ 
+ @tex
+-% I think something like @colophon should be in texinfo.  In the
++% I think something like @@colophon should be in texinfo.  In the
+ % meantime:
+ \long\def\colophon{\hbox to0pt{}\vfill
+ \centerline{The body of this manual is set in}
+@@ -7789,7 +7789,7 @@
+ \centerline{{\sl\fontname\tensl\/}}
+ \centerline{are used for emphasis.}\vfill}
+ \page\colophon
+-% Blame: doc@cygnus.com, 28mar91.
++% Blame: doc@@cygnus.com, 28mar91.
+ @end tex
+ 
+ @bye
